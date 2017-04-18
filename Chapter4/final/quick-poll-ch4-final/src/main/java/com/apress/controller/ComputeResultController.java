@@ -16,8 +16,11 @@ import com.apress.domain.Vote;
 import com.apress.dto.OptionCount;
 import com.apress.dto.VoteResult;
 import com.apress.repository.VoteRepository;
+import com.wordnik.swagger.annotations.Api;
+import com.wordnik.swagger.annotations.ApiOperation;
 
 @RestController
+@Api(value = "computeresult", description = "Compute Results API")
 public class ComputeResultController {
 	
 	@Inject
@@ -25,6 +28,7 @@ public class ComputeResultController {
 
 	
 	@RequestMapping(value="/computeresult", method=RequestMethod.GET)
+	@ApiOperation(value = "Computes the results of a given Poll", response = VoteResult.class)
 	public ResponseEntity<?> computeResult(@RequestParam Long pollId) {
 		VoteResult voteResult = new VoteResult();
 		Iterable<Vote> allVotes = voteRepository.findByPoll(pollId);
