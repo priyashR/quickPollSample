@@ -19,8 +19,8 @@ import com.apress.repository.VoteRepository;
 import com.wordnik.swagger.annotations.Api;
 import com.wordnik.swagger.annotations.ApiOperation;
 
-@RestController("computeResultControllerV2")
-@RequestMapping("/v2/")
+@RestController("computeResultControllerV3")
+@RequestMapping("/v3/")
 @Api(value = "computeresult", description = "Compute Results API")
 public class ComputeResultController {
 	

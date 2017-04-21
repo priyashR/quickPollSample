@@ -20,8 +20,8 @@ import com.wordnik.swagger.annotations.ApiOperation;
 import com.wordnik.swagger.annotations.ApiResponse;
 import com.wordnik.swagger.annotations.ApiResponses;
 
-@RestController("voteControllerV2")
-@RequestMapping("/v2/")
+@RestController("voteControllerV3")
+@RequestMapping("/v3/")
 @Api(value = "votes", description = "Votes API")
 public class VoteController {
 
