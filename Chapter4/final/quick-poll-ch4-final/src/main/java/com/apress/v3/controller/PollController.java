@@ -1,4 +1,4 @@
-package com.apress.v2.controller;
+package com.apress.v3.controller;
 
 import java.net.URI;
 
